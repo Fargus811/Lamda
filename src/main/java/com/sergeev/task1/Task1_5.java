@@ -3,16 +3,11 @@ package main.java.com.sergeev.task1;
 import java.util.List;
 import java.util.function.Function;
 import java.util.stream.Collectors;
-import java.util.stream.LongStream;
 
 /**
  * Task accepts a list of strings and returns new list of distinct strings (without repeating).
  */
 public class Task1_5 {
-
-    interface Calculator {
-        long calculateProductionOfNumbersInRange(long startRange, long endRange);
-    }
 
     public static void main(String[] args) {
         Task1_5 task1_5 = new Task1_5();
