@@ -14,9 +14,9 @@ public class Task1_4 {
     public static void main(String[] args) {
         long firstNumber = Long.parseLong(args[0]);
         long secondNumber = Long.parseLong(args[1]);
-        Task1_4 task1_3 = new Task1_4();
+        Task1_4 task1_4 = new Task1_4();
         Calculator calculator = (a, b) -> LongStream.rangeClosed(a, b).boxed().reduce(1L, (x, y) -> x*y);
-        System.out.println(task1_3.process(firstNumber,secondNumber, calculator));
+        System.out.println(task1_4.process(firstNumber,secondNumber, calculator));
     }
 
     public long process(long firstNumber, long secondNumber, Calculator calculator) {
