@@ -12,7 +12,7 @@ public class Task2_2 {
     private static final TernaryIntPredicate allValuesAreDifferentPredicate = (x, y, z) -> x != y && x != z && y != z;
 
     public static void main(String[] args) {
-        System.out.println(allValuesAreDifferentPredicate.test(1,1,1)); //false result
-        System.out.println(allValuesAreDifferentPredicate.test(1,2,3)); //true result
+        System.out.println(allValuesAreDifferentPredicate.test(1, 1, 1)); //false result
+        System.out.println(allValuesAreDifferentPredicate.test(1, 2, 3)); //true result
     }
 }

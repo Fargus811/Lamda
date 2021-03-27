@@ -9,13 +9,13 @@ import java.util.stream.IntStream;
 public class Task3_3 {
 
     public static void main(String[] args) {
-        IntStream evenStream = IntStream.of(1,2,3,4);
-        IntStream oddStream = IntStream.of(30,75,60,90);
+        IntStream evenStream = IntStream.of(1, 2, 3, 4);
+        IntStream oddStream = IntStream.of(30, 75, 60, 90);
 
-        createFilteringStream(evenStream,oddStream).forEach(System.out::println);
+        createFilteringStream(evenStream, oddStream).forEach(System.out::println);
     }
 
     public static IntStream createFilteringStream(IntStream evenStream, IntStream oddStream) {
-        return IntStream.concat(evenStream,oddStream).filter(x-> x%3 ==0 && x%5==0).sorted().skip(2);
+        return IntStream.concat(evenStream, oddStream).filter(x -> x % 3 == 0 && x % 5 == 0).sorted().skip(2);
     }
 }

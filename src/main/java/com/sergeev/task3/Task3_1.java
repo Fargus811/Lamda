@@ -13,6 +13,6 @@ public class Task3_1 {
     }
 
     public static boolean isPrime(final long number) {
-        return number > 1 && LongStream.range(2, number).noneMatch(i -> number%i==0);
+        return number > 1 && LongStream.range(2, number).noneMatch(i -> number % i == 0);
     }
 }
