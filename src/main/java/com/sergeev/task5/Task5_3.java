@@ -44,6 +44,4 @@ public class Task5_3 {
      * The operator calculates the product in the given range (inclusively)
      */
     public static final IntBinaryOperator productOperator = reduceIntOperator.apply(1, (x, y) -> x * y);
-
-
 }
